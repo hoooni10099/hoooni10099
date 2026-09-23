@@ -4,9 +4,9 @@
 -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:0f2a1f&height=110&text=%20&section=header">
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=rect&color=0:ffffff,100:e8f7ef&height=110&text=%20&section=header">
-  <img width="100%" alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:0f2a1f&height=110&text=%20&section=header">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:0f2a1f&height=120&section=header&text=SENSOR%20%E2%86%92%20SIGNAL%20%E2%86%92%20DATA&fontSize=34&fontColor=2BD67B&fontAlign=50&fontAlignY=55&desc=hoooni10099%20%C2%B7%20embedded%20full-stack&descSize=14&descAlign=50&descAlignY=80">
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=rect&color=0:ffffff,100:e8f7ef&height=120&section=header&text=SENSOR%20%E2%86%92%20SIGNAL%20%E2%86%92%20DATA&fontSize=34&fontColor=159a55&fontAlign=50&fontAlignY=55&desc=hoooni10099%20%C2%B7%20embedded%20full-stack&descSize=14&descAlign=50&descAlignY=80">
+  <img width="100%" alt="SENSOR → SIGNAL → DATA" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:0f2a1f&height=120&section=header&text=SENSOR%20%E2%86%92%20SIGNAL%20%E2%86%92%20DATA&fontSize=34&fontColor=2BD67B&fontAlign=50&fontAlignY=55&desc=hoooni10099%20%C2%B7%20embedded%20full-stack&descSize=14&descAlign=50&descAlignY=80">
 </picture>
 
 <h1 align="left">
