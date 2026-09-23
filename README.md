@@ -1,19 +1,19 @@
 <!--
-  업로드 방법: github.com/new 에서 저장소 이름을 hoooni10099 (아이디와 동일) 로, Public + "Add a README file" 체크 → 이 내용으로 교체
+  업로드 방법: hoooni10099/hoooni10099 저장소에 README.md 와 assets 폴더(header-dark.svg, header-light.svg)를 함께 올리기
   [대괄호] 부분만 채우거나 지우면 됩니다.
 -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:0f2a1f&height=120&section=header&text=SENSOR%20%E2%86%92%20SIGNAL%20%E2%86%92%20DATA&fontSize=34&fontColor=2BD67B&fontAlign=50&fontAlignY=55&desc=hoooni10099%20%C2%B7%20embedded%20full-stack&descSize=14&descAlign=50&descAlignY=80">
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=rect&color=0:ffffff,100:e8f7ef&height=120&section=header&text=SENSOR%20%E2%86%92%20SIGNAL%20%E2%86%92%20DATA&fontSize=34&fontColor=159a55&fontAlign=50&fontAlignY=55&desc=hoooni10099%20%C2%B7%20embedded%20full-stack&descSize=14&descAlign=50&descAlignY=80">
-  <img width="100%" alt="SENSOR → SIGNAL → DATA" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:0f2a1f&height=120&section=header&text=SENSOR%20%E2%86%92%20SIGNAL%20%E2%86%92%20DATA&fontSize=34&fontColor=2BD67B&fontAlign=50&fontAlignY=55&desc=hoooni10099%20%C2%B7%20embedded%20full-stack&descSize=14&descAlign=50&descAlignY=80">
+  <source media="(prefers-color-scheme: dark)"  srcset="./assets/header-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/header-light.svg">
+  <img width="100%" alt="SENSOR → SIGNAL → DATA" src="./assets/header-dark.svg">
 </picture>
 
 <h1 align="left">
   이상훈 <sub><sup>/ Embedded Full-Stack Developer</sup></sub>
 </h1>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=2600&pause=900&color=2BD67B&vCenter=true&width=600&height=28&lines=%3E+%EC%84%BC%EC%84%9C%EC%97%90%EC%84%9C+%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C%EA%B9%8C%EC%A7%80%2C+%ED%95%9C+%EC%A4%84%EB%A1%9C+%EC%9E%87%EC%8A%B5%EB%8B%88%EB%8B%A4.;%3E+firmware+%E2%86%92+serial+%E2%86%92+DB+%E2%86%92+analysis+%E2%86%92+dashboard;%3E+I'm+gonna+be+the+best+full-stack+dev+(embedded)." alt="typing" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=2600&pause=900&color=2BD67B&vCenter=true&width=760&height=28&lines=%3E+%EC%84%BC%EC%84%9C%EC%97%90%EC%84%9C+%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C%EA%B9%8C%EC%A7%80%2C+%ED%95%9C+%EC%A4%84%EB%A1%9C+%EC%9E%87%EC%8A%B5%EB%8B%88%EB%8B%A4.;%3E+firmware+%E2%86%92+serial+%E2%86%92+DB+%E2%86%92+analysis+%E2%86%92+dashboard;%3E+I'm+gonna+be+the+best+full-stack+dev+(embedded)." alt="typing" /></a>
 
 <br/>
 
