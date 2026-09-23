@@ -24,6 +24,7 @@ typedef struct {
     const char *role;       // "Embedded Full-Stack Developer"
     const char *layers[4];  // { "Firmware", "Embedded", "Data", "Analytics" }
     const char *focus;      // "Predictive Maintenance · Smart Factory (MES)"
+    const char *certs[2];   // { "SQLD", "ADsP" }
     const char *contact;    // "lshun3604@gmail.com"
 } engineer_t;
 
@@ -88,6 +89,23 @@ volatile uint8_t curiosity = 0xFF;   // always max
 
 <br/>
 
+## ▩ Certified Modules
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="https://img.shields.io/badge/SQLD-SQL%20개발자-336791?style=flat-square&logo=postgresql&logoColor=white" height="22"/>
+      <br/><sub>한국데이터산업진흥원 · 데이터 모델링 & SQL 활용</sub>
+    </td>
+    <td width="50%" valign="top">
+      <img src="https://img.shields.io/badge/ADsP-데이터분석%20준전문가-2BD67B?style=flat-square&logo=databricks&logoColor=white" height="22"/>
+      <br/><sub>한국데이터산업진흥원 · 데이터 이해 · 분석 기획 · 통계 분석</sub>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
 ## ▥ Selected Work
 
 <table>
@@ -133,6 +151,7 @@ Arduino ─serial─▶ Collector ─▶ PostgreSQL
 [    0.104213] lang: C / C++ / Java / Python loaded ............................. [  OK  ]
 [    1.337000] db: SQLite schema design, MES data modeling ....................... [  OK  ]
 [    2.048000] fw: Arduino 4-sensor node, serial protocol, debounce .............. [  OK  ]
+[    2.718281] cert: SQLD, ADsP (K-data) verified ................................ [ PASS ]
 [    3.141592] data: PdM pipeline, SQLite → PostgreSQL migration ................. [  OK  ]
 [    4.096000] now: [STM32 / Raspberry Pi 확장 · 진행 중인 일] ...................... [ BUSY ]
 [    ∞       ] waiting for next interrupt_
