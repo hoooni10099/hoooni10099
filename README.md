@@ -148,9 +148,9 @@ Arduino ─serial─▶ Collector ─▶ PostgreSQL
 <sub>
 
 ```
-Feeder ─Pick(scup-on)─▶ Palletize p1 ─▶ WP1→WP4
-   ▲                         │  layer 2: Z +35.7mm
-   └──────── Loop ×4 ◀───────┘
+Feeder ─Pick─▶ Palletize p1
+  ▲               │ WP1→WP4
+  └── Loop ×4 ◀───┘ layer2 +35.7mm
 ```
 
 </sub>
