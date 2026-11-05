@@ -133,11 +133,35 @@ Arduino ─serial─▶ Collector ─▶ PostgreSQL
       <h3>🏭 <a href="https://github.com/hoooni10099/Dx-Ax">Dx-Ax</a></h3>
       <sub>C · C++ · Java · Python · SQLite를 넘나들며 쌓은 <b>737 commits</b>의 학습·프로젝트 아카이브</sub>
       <br/><br/>
-      <sub>▸ <b>Mini MES Project</b> — [제조 실행 시스템에서 구현한 기능 한 줄]<br/>
+      <sub>▸ <b>Mini MES Project</b> — BOM · Routing · LOT 기반 공정실적, EOL 검사, Serial · LOT 양방향 추적<br/>
       ▸ 언어별 실습 코드와 SQLite 데이터 설계<br/>
       ▸ WSL(Ubuntu) 기반 개발 환경 구성</sub>
       <br/><br/>
       <code>C/C++</code> <code>Java</code> <code>Python</code> <code>SQLite</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🤖 <a href="https://github.com/hoooni10099/Cobot_Palletizing">Cobot Pick &amp; Palletizing</a></h3>
+      <sub>Neuromeka 협동로봇을 Conty 펜던트로 티칭해 피더 → 팔레트 <b>2×2 · 2단 적층</b>까지 자동화한 실습</sub>
+      <br/><br/>
+<sub>
+
+```
+Feeder ─Pick(scup-on)─▶ Palletize p1 ─▶ WP1→WP4
+   ▲                         │  layer 2: Z +35.7mm
+   └──────── Loop ×4 ◀───────┘
+```
+
+</sub>
+      <sub>▸ Loop · Pick · Palletize로 반복 동작 구조화, 칸 간격 약 78mm<br/>
+      ▸ 같은 네 칸을 한 단 높이만큼 올려 재티칭해 2단 적재<br/>
+      ▸ 컨트롤 박스 DO.02로 진공 석션컵 on/off, 병 이송 · 상자 적재까지</sub>
+      <br/><br/>
+      <code>Neuromeka</code> <code>Conty</code> <code>Palletizing</code> <code>Digital I/O</code>
+    </td>
+    <td width="50%" valign="middle" align="center">
+      <a href="https://github.com/hoooni10099/Cobot_Palletizing"><img src="https://github.com/hoooni10099/Cobot_Palletizing/raw/main/media/cycle.gif" width="100%" alt="협동로봇이 피더에서 부품을 집어 팔레트에 적재하는 사이클"/></a>
     </td>
   </tr>
 </table>
@@ -153,6 +177,7 @@ Arduino ─serial─▶ Collector ─▶ PostgreSQL
 [    2.048000] fw: Arduino 4-sensor node, serial protocol, debounce .............. [  OK  ]
 [    2.718281] cert: SQLD, ADsP (K-data) verified ................................ [ PASS ]
 [    3.141592] data: PdM pipeline, SQLite → PostgreSQL migration ................. [  OK  ]
+[    3.600000] robot: Neuromeka cobot, Conty teaching, 2x2 · 2-layer palletizing . [  OK  ]
 [    4.096000] now: [STM32 / Raspberry Pi 확장 · 진행 중인 일] ...................... [ BUSY ]
 [    ∞       ] waiting for next interrupt_
 ```
