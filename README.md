@@ -45,7 +45,7 @@ volatile uint8_t curiosity = 0xFF;   // always max
   ├───────────────────────────────────────────────────────┤
   │  APP       Python · Java                               │  ← 수집하고, 처리하고
   ├───────────────────────────────────────────────────────┤
-  │  EMBEDDED  Raspberry Pi · Linux (Ubuntu/WSL)           │  ← 엣지에서 돌리고
+  │  EMBEDDED  Raspberry Pi · Linux (Ubuntu/WSL) · ROS     │  ← 엣지에서 돌리고
   ├───────────────────────────────────────────────────────┤
   │  FIRMWARE  C · C++ · STM32 · Arduino · UART/Serial     │  ← 하드웨어를 깨우고
   └───────────────────────────────────────────────────────┘
@@ -79,6 +79,15 @@ volatile uint8_t curiosity = 0xFF;   // always max
       <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" height="22"/>
       <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" height="22"/>
       <img src="https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white" height="22"/>
+    </td>
+  </tr>
+  <tr>
+    <td><sub><b>Robotics</b></sub></td>
+    <td>
+      <img src="https://img.shields.io/badge/ROS%20Noetic-22314E?style=flat-square&logo=ros&logoColor=white" height="22"/>
+      <img src="https://img.shields.io/badge/TurtleBot3-1E88E5?style=flat-square&logo=robotframework&logoColor=white" height="22"/>
+      <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" height="22"/>
+      <img src="https://img.shields.io/badge/Neuromeka%20Cobot-444444?style=flat-square" height="22"/>
     </td>
   </tr>
   <tr>
@@ -164,6 +173,32 @@ Feeder ─Pick─▶ Palletize p1
       <a href="https://github.com/hoooni10099/Cobot_Palletizing"><img src="https://github.com/hoooni10099/Cobot_Palletizing/raw/main/media/cycle.gif" width="100%" alt="협동로봇이 피더에서 부품을 집어 팔레트에 적재하는 사이클"/></a>
     </td>
   </tr>
+  <tr>
+    <td width="50%" valign="middle" align="center">
+      <a href="https://github.com/hoooni10099/ROS_TurtleBot3_Autonomous_Driving"><img src="https://github.com/hoooni10099/ROS_TurtleBot3_Autonomous_Driving/raw/main/media/vd_lane.gif" width="100%" alt="TurtleBot3 카메라 원본과 차선 검출 결과"/></a>
+      <br/>
+      <a href="https://github.com/hoooni10099/ROS_TurtleBot3_Autonomous_Driving"><img src="https://github.com/hoooni10099/ROS_TurtleBot3_Autonomous_Driving/raw/main/media/sn_nav.gif" width="100%" alt="저장한 지도 위에서 AMCL로 위치를 잡고 목표 지점까지 주행"/></a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🛞 <a href="https://github.com/hoooni10099/ROS_TurtleBot3_Autonomous_Driving">ROS TurtleBot3 Autonomous Driving</a></h3>
+      <sub>ROS Noetic · TurtleBot3로 <b>LiDAR SLAM → AMCL 위치 추정 → 목표 지점 주행</b>, 카메라 차선 인식까지 묶은 VisionDrive</sub>
+      <br/><br/>
+<sub>
+
+```
+LiDAR ─▶ Gmapping ─▶ map ─▶ AMCL ─┐
+Camera ─▶ BEV ─▶ detect_lane ─┐   ▼
+           control_lane ─▶ /cmd_vel ◀─ move_base
+```
+
+</sub>
+      <sub>▸ 텔레옵 매핑 → map_saver → 2D Pose Estimate · Nav Goal로 자율 주행<br/>
+      ▸ 어안 카메라 내부 · 외부 보정, HSV 노란선 · 흰선 검출로 차선 추종<br/>
+      ▸ rqt_graph로 /cmd_vel 이중 발행 구조를 찾아 개선 과제로 정리</sub>
+      <br/><br/>
+      <code>ROS Noetic</code> <code>Gmapping</code> <code>AMCL</code> <code>move_base</code> <code>OpenCV</code>
+    </td>
+  </tr>
 </table>
 
 <br/>
@@ -178,6 +213,7 @@ Feeder ─Pick─▶ Palletize p1
 [    2.718281] cert: SQLD, ADsP (K-data) verified ................................ [ PASS ]
 [    3.141592] data: PdM pipeline, SQLite → PostgreSQL migration ................. [  OK  ]
 [    3.600000] robot: Neuromeka cobot, Conty teaching, 2x2 · 2-layer palletizing . [  OK  ]
+[    3.850000] ros: TurtleBot3 SLAM · AMCL nav · camera lane following ......... [  OK  ]
 [    4.096000] now: [STM32 / Raspberry Pi 확장 · 진행 중인 일] ...................... [ BUSY ]
 [    ∞       ] waiting for next interrupt_
 ```
